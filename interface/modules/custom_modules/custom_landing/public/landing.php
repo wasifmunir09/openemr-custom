@@ -17,6 +17,7 @@ if (!isset($_SESSION['authUserID'])) {
 }
 
 $user = $_SESSION['authUser'];
+$token_main = $_SESSION['token_main_php'] ?? '';
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,13 +31,13 @@ $user = $_SESSION['authUser'];
             margin: 0;
             padding: 0;
         }
-        
+
         .landing-container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 40px 20px;
         }
-        
+
         .header-section {
             text-align: center;
             margin-bottom: 50px;
@@ -45,29 +46,29 @@ $user = $_SESSION['authUser'];
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        
+
         .logo-container {
             margin-bottom: 20px;
         }
-        
+
         .logo-container img {
             max-width: 250px;
             height: auto;
         }
-        
+
         .welcome-text {
             font-size: 24px;
             color: #333;
             margin: 10px 0;
         }
-        
+
         .icon-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 25px;
             margin-top: 30px;
         }
-        
+
         .icon-card {
             background: white;
             border-radius: 10px;
@@ -79,32 +80,32 @@ $user = $_SESSION['authUser'];
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             cursor: pointer;
         }
-        
+
         .icon-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 5px 20px rgba(0,0,0,0.15);
             text-decoration: none;
             color: #007bff;
         }
-        
+
         .icon-card i {
             font-size: 48px;
             margin-bottom: 15px;
             display: block;
             color: #007bff;
         }
-        
+
         .icon-card .icon-title {
             font-size: 16px;
             font-weight: 600;
             margin-bottom: 5px;
         }
-        
+
         .icon-card .icon-description {
             font-size: 12px;
             color: #666;
         }
-        
+
         .logout-btn {
             position: fixed;
             top: 20px;
@@ -118,7 +119,7 @@ $user = $_SESSION['authUser'];
             transition: background 0.3s;
             z-index: 1000;
         }
-        
+
         .logout-btn:hover {
             background: #c82333;
             text-decoration: none;
@@ -146,7 +147,7 @@ $user = $_SESSION['authUser'];
 
         <div class="icon-grid">
             <!-- Calendar -->
-            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/main/main_screen.php?auth=login&site=default" 
+            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/main/tabs/main.php?token_main=<?php echo urlencode($token_main); ?>"
                class="icon-card">
                 <i class="fa fa-calendar"></i>
                 <div class="icon-title">Calendar</div>
@@ -154,7 +155,7 @@ $user = $_SESSION['authUser'];
             </a>
 
             <!-- Patients -->
-            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/main/finder/dynamic_finder.php" 
+            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/main/finder/dynamic_finder.php"
                class="icon-card">
                 <i class="fa fa-users"></i>
                 <div class="icon-title">Patients</div>
@@ -162,23 +163,15 @@ $user = $_SESSION['authUser'];
             </a>
 
             <!-- New Patient -->
-            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/new/new.php" 
+            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/new/new.php"
                class="icon-card">
                 <i class="fa fa-user-plus"></i>
                 <div class="icon-title">New Patient</div>
                 <div class="icon-description">Register new patient</div>
             </a>
 
-            <!-- Reports -->
-            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/reports/reports_controllers/ReportsController.php" 
-               class="icon-card">
-                <i class="fa fa-file-text"></i>
-                <div class="icon-title">Reports</div>
-                <div class="icon-description">View and generate reports</div>
-            </a>
-
             <!-- Billing -->
-            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/billing/billing_report.php" 
+            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/billing/billing_report.php"
                class="icon-card">
                 <i class="fa fa-dollar"></i>
                 <div class="icon-title">Billing</div>
@@ -186,24 +179,24 @@ $user = $_SESSION['authUser'];
             </a>
 
             <!-- Messages -->
-            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/main/messages/messages.php" 
+            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/main/messages/messages.php"
                class="icon-card">
                 <i class="fa fa-envelope"></i>
                 <div class="icon-title">Messages</div>
                 <div class="icon-description">Internal messaging system</div>
             </a>
 
-            <!-- Procedures -->
-            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/orders/orders_results.php" 
-               class="icon-card">
-                <i class="fa fa-flask"></i>
-                <div class="icon-title">Procedures</div>
-                <div class="icon-description">Lab and procedure orders</div>
-            </a>
+<!-- Flow -->
+<a href="<?php echo $GLOBALS['webroot']; ?>/interface/reports/patient_flow_board_report.php"
+   class="icon-card">
+    <i class="fa fa-sitemap"></i>
+    <div class="icon-title">Flow</div>
+    <div class="icon-description">Patient flow board</div>
+</a>
 
             <!-- Administration -->
             <?php if (AclMain::aclCheckCore('admin', 'super')) { ?>
-            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/super/edit_globals.php" 
+            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/super/edit_globals.php"
                class="icon-card">
                 <i class="fa fa-cog"></i>
                 <div class="icon-title">Administration</div>
