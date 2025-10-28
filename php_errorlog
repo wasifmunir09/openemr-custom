@@ -1,0 +1,28 @@
+[25-Sep-2025 07:37:40 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/setup.php:113
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/setup.php on line 113
+[25-Sep-2025 07:37:46 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/setup.php:113
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/setup.php on line 113
+[25-Sep-2025 07:38:13 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/setup.php:113
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/setup.php on line 113
+[25-Sep-2025 07:38:32 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/setup.php:113
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/setup.php on line 113
+[25-Sep-2025 07:40:12 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/setup.php:113
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/setup.php on line 113
+[25-Sep-2025 07:40:30 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/setup.php:113
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/setup.php on line 113
+[25-Sep-2025 07:56:13 UTC] PHP Deprecated:  preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/classes/Installer.class.php on line 148
+[25-Sep-2025 07:56:43 UTC] PHP Deprecated:  Creation of dynamic property Installer::$theme_file_name is deprecated in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/classes/Installer.class.php on line 1577
+[25-Sep-2025 07:56:49 UTC] PHP Deprecated:  Creation of dynamic property Installer::$theme_file_name is deprecated in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/classes/Installer.class.php on line 1577
+[25-Sep-2025 10:31:13 UTC] OpenEMR has already been installed. If you wish to force re-installation, then edit /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/classes/../../sites/default/sqlconf.php (change the 'config' variable to 0), and re-run the setup.php script.

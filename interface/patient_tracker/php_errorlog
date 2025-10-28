@@ -1,0 +1,209 @@
+[25-Sep-2025 15:21:52 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php:1372
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1372): mysqli_query(false, 'SET NAMES 'utf8...', 0)
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/adodb.inc.php(1613): ADODB_mysqli->_query('SET NAMES 'utf8...', false)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1113): ADOConnection->_Execute('SET NAMES 'utf8...')
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/ADODB_mysqli_log.php(60): ADODB_mysqli->execute('SET NAMES 'utf8...', false)
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/sql.inc.php(66): ADODB_mysqli_log->ExecuteNoLog('SET NAMES 'utf8...')
+#5 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php(301): require_once('/home/customer/...')
+#6 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/patient_tracker/patient_tracker.php(21): require_once('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php on line 1372
+[25-Sep-2025 15:22:12 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php:1372
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1372): mysqli_query(false, 'SET NAMES 'utf8...', 0)
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/adodb.inc.php(1613): ADODB_mysqli->_query('SET NAMES 'utf8...', false)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1113): ADOConnection->_Execute('SET NAMES 'utf8...')
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/ADODB_mysqli_log.php(60): ADODB_mysqli->execute('SET NAMES 'utf8...', false)
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/sql.inc.php(66): ADODB_mysqli_log->ExecuteNoLog('SET NAMES 'utf8...')
+#5 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php(301): require_once('/home/customer/...')
+#6 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/patient_tracker/patient_tracker.php(21): require_once('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php on line 1372
+[25-Sep-2025 15:22:32 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php:1372
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1372): mysqli_query(false, 'SET NAMES 'utf8...', 0)
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/adodb.inc.php(1613): ADODB_mysqli->_query('SET NAMES 'utf8...', false)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1113): ADOConnection->_Execute('SET NAMES 'utf8...')
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/ADODB_mysqli_log.php(60): ADODB_mysqli->execute('SET NAMES 'utf8...', false)
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/sql.inc.php(66): ADODB_mysqli_log->ExecuteNoLog('SET NAMES 'utf8...')
+#5 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php(301): require_once('/home/customer/...')
+#6 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/patient_tracker/patient_tracker.php(21): require_once('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php on line 1372
+[25-Sep-2025 15:22:52 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php:1372
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1372): mysqli_query(false, 'SET NAMES 'utf8...', 0)
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/adodb.inc.php(1613): ADODB_mysqli->_query('SET NAMES 'utf8...', false)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1113): ADOConnection->_Execute('SET NAMES 'utf8...')
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/ADODB_mysqli_log.php(60): ADODB_mysqli->execute('SET NAMES 'utf8...', false)
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/sql.inc.php(66): ADODB_mysqli_log->ExecuteNoLog('SET NAMES 'utf8...')
+#5 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php(301): require_once('/home/customer/...')
+#6 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/patient_tracker/patient_tracker.php(21): require_once('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php on line 1372
+[25-Sep-2025 15:23:12 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php:1372
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1372): mysqli_query(false, 'SET NAMES 'utf8...', 0)
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/adodb.inc.php(1613): ADODB_mysqli->_query('SET NAMES 'utf8...', false)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1113): ADOConnection->_Execute('SET NAMES 'utf8...')
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/ADODB_mysqli_log.php(60): ADODB_mysqli->execute('SET NAMES 'utf8...', false)
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/sql.inc.php(66): ADODB_mysqli_log->ExecuteNoLog('SET NAMES 'utf8...')
+#5 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php(301): require_once('/home/customer/...')
+#6 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/patient_tracker/patient_tracker.php(21): require_once('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php on line 1372
+[25-Sep-2025 15:23:32 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php:1372
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1372): mysqli_query(false, 'SET NAMES 'utf8...', 0)
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/adodb.inc.php(1613): ADODB_mysqli->_query('SET NAMES 'utf8...', false)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1113): ADOConnection->_Execute('SET NAMES 'utf8...')
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/ADODB_mysqli_log.php(60): ADODB_mysqli->execute('SET NAMES 'utf8...', false)
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/sql.inc.php(66): ADODB_mysqli_log->ExecuteNoLog('SET NAMES 'utf8...')
+#5 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php(301): require_once('/home/customer/...')
+#6 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/patient_tracker/patient_tracker.php(21): require_once('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php on line 1372
+[25-Sep-2025 15:23:52 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php:1372
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1372): mysqli_query(false, 'SET NAMES 'utf8...', 0)
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/adodb.inc.php(1613): ADODB_mysqli->_query('SET NAMES 'utf8...', false)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1113): ADOConnection->_Execute('SET NAMES 'utf8...')
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/ADODB_mysqli_log.php(60): ADODB_mysqli->execute('SET NAMES 'utf8...', false)
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/sql.inc.php(66): ADODB_mysqli_log->ExecuteNoLog('SET NAMES 'utf8...')
+#5 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php(301): require_once('/home/customer/...')
+#6 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/patient_tracker/patient_tracker.php(21): require_once('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php on line 1372
+[25-Sep-2025 15:24:12 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php:1372
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1372): mysqli_query(false, 'SET NAMES 'utf8...', 0)
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/adodb.inc.php(1613): ADODB_mysqli->_query('SET NAMES 'utf8...', false)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1113): ADOConnection->_Execute('SET NAMES 'utf8...')
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/ADODB_mysqli_log.php(60): ADODB_mysqli->execute('SET NAMES 'utf8...', false)
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/sql.inc.php(66): ADODB_mysqli_log->ExecuteNoLog('SET NAMES 'utf8...')
+#5 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php(301): require_once('/home/customer/...')
+#6 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/patient_tracker/patient_tracker.php(21): require_once('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php on line 1372
+[25-Sep-2025 15:24:32 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php:1372
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1372): mysqli_query(false, 'SET NAMES 'utf8...', 0)
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/adodb.inc.php(1613): ADODB_mysqli->_query('SET NAMES 'utf8...', false)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1113): ADOConnection->_Execute('SET NAMES 'utf8...')
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/ADODB_mysqli_log.php(60): ADODB_mysqli->execute('SET NAMES 'utf8...', false)
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/sql.inc.php(66): ADODB_mysqli_log->ExecuteNoLog('SET NAMES 'utf8...')
+#5 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php(301): require_once('/home/customer/...')
+#6 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/patient_tracker/patient_tracker.php(21): require_once('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php on line 1372
+[25-Sep-2025 15:24:53 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php:1372
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1372): mysqli_query(false, 'SET NAMES 'utf8...', 0)
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/adodb.inc.php(1613): ADODB_mysqli->_query('SET NAMES 'utf8...', false)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1113): ADOConnection->_Execute('SET NAMES 'utf8...')
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/ADODB_mysqli_log.php(60): ADODB_mysqli->execute('SET NAMES 'utf8...', false)
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/sql.inc.php(66): ADODB_mysqli_log->ExecuteNoLog('SET NAMES 'utf8...')
+#5 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php(301): require_once('/home/customer/...')
+#6 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/patient_tracker/patient_tracker.php(21): require_once('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php on line 1372
+[25-Sep-2025 15:25:13 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php:1372
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1372): mysqli_query(false, 'SET NAMES 'utf8...', 0)
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/adodb.inc.php(1613): ADODB_mysqli->_query('SET NAMES 'utf8...', false)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1113): ADOConnection->_Execute('SET NAMES 'utf8...')
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/ADODB_mysqli_log.php(60): ADODB_mysqli->execute('SET NAMES 'utf8...', false)
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/sql.inc.php(66): ADODB_mysqli_log->ExecuteNoLog('SET NAMES 'utf8...')
+#5 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php(301): require_once('/home/customer/...')
+#6 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/patient_tracker/patient_tracker.php(21): require_once('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php on line 1372
+[25-Sep-2025 15:25:33 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php:1372
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1372): mysqli_query(false, 'SET NAMES 'utf8...', 0)
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/adodb.inc.php(1613): ADODB_mysqli->_query('SET NAMES 'utf8...', false)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1113): ADOConnection->_Execute('SET NAMES 'utf8...')
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/ADODB_mysqli_log.php(60): ADODB_mysqli->execute('SET NAMES 'utf8...', false)
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/sql.inc.php(66): ADODB_mysqli_log->ExecuteNoLog('SET NAMES 'utf8...')
+#5 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php(301): require_once('/home/customer/...')
+#6 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/patient_tracker/patient_tracker.php(21): require_once('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php on line 1372
+[25-Sep-2025 15:25:53 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php:1372
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1372): mysqli_query(false, 'SET NAMES 'utf8...', 0)
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/adodb.inc.php(1613): ADODB_mysqli->_query('SET NAMES 'utf8...', false)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1113): ADOConnection->_Execute('SET NAMES 'utf8...')
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/ADODB_mysqli_log.php(60): ADODB_mysqli->execute('SET NAMES 'utf8...', false)
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/sql.inc.php(66): ADODB_mysqli_log->ExecuteNoLog('SET NAMES 'utf8...')
+#5 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php(301): require_once('/home/customer/...')
+#6 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/patient_tracker/patient_tracker.php(21): require_once('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php on line 1372
+[25-Sep-2025 15:26:13 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php:1372
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1372): mysqli_query(false, 'SET NAMES 'utf8...', 0)
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/adodb.inc.php(1613): ADODB_mysqli->_query('SET NAMES 'utf8...', false)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1113): ADOConnection->_Execute('SET NAMES 'utf8...')
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/ADODB_mysqli_log.php(60): ADODB_mysqli->execute('SET NAMES 'utf8...', false)
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/sql.inc.php(66): ADODB_mysqli_log->ExecuteNoLog('SET NAMES 'utf8...')
+#5 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php(301): require_once('/home/customer/...')
+#6 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/patient_tracker/patient_tracker.php(21): require_once('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php on line 1372
+[25-Sep-2025 15:26:34 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php:1372
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1372): mysqli_query(false, 'SET NAMES 'utf8...', 0)
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/adodb.inc.php(1613): ADODB_mysqli->_query('SET NAMES 'utf8...', false)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1113): ADOConnection->_Execute('SET NAMES 'utf8...')
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/ADODB_mysqli_log.php(60): ADODB_mysqli->execute('SET NAMES 'utf8...', false)
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/sql.inc.php(66): ADODB_mysqli_log->ExecuteNoLog('SET NAMES 'utf8...')
+#5 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php(301): require_once('/home/customer/...')
+#6 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/patient_tracker/patient_tracker.php(21): require_once('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php on line 1372
+[25-Sep-2025 15:26:54 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php:1372
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1372): mysqli_query(false, 'SET NAMES 'utf8...', 0)
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/adodb.inc.php(1613): ADODB_mysqli->_query('SET NAMES 'utf8...', false)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1113): ADOConnection->_Execute('SET NAMES 'utf8...')
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/ADODB_mysqli_log.php(60): ADODB_mysqli->execute('SET NAMES 'utf8...', false)
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/sql.inc.php(66): ADODB_mysqli_log->ExecuteNoLog('SET NAMES 'utf8...')
+#5 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php(301): require_once('/home/customer/...')
+#6 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/patient_tracker/patient_tracker.php(21): require_once('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php on line 1372
+[25-Sep-2025 15:27:14 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php:1372
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1372): mysqli_query(false, 'SET NAMES 'utf8...', 0)
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/adodb.inc.php(1613): ADODB_mysqli->_query('SET NAMES 'utf8...', false)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1113): ADOConnection->_Execute('SET NAMES 'utf8...')
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/ADODB_mysqli_log.php(60): ADODB_mysqli->execute('SET NAMES 'utf8...', false)
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/sql.inc.php(66): ADODB_mysqli_log->ExecuteNoLog('SET NAMES 'utf8...')
+#5 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php(301): require_once('/home/customer/...')
+#6 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/patient_tracker/patient_tracker.php(21): require_once('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php on line 1372
+[25-Sep-2025 15:27:35 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php:1372
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1372): mysqli_query(false, 'SET NAMES 'utf8...', 0)
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/adodb.inc.php(1613): ADODB_mysqli->_query('SET NAMES 'utf8...', false)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1113): ADOConnection->_Execute('SET NAMES 'utf8...')
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/ADODB_mysqli_log.php(60): ADODB_mysqli->execute('SET NAMES 'utf8...', false)
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/sql.inc.php(66): ADODB_mysqli_log->ExecuteNoLog('SET NAMES 'utf8...')
+#5 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php(301): require_once('/home/customer/...')
+#6 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/patient_tracker/patient_tracker.php(21): require_once('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php on line 1372
+[25-Sep-2025 15:27:55 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php:1372
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1372): mysqli_query(false, 'SET NAMES 'utf8...', 0)
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/adodb.inc.php(1613): ADODB_mysqli->_query('SET NAMES 'utf8...', false)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1113): ADOConnection->_Execute('SET NAMES 'utf8...')
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/ADODB_mysqli_log.php(60): ADODB_mysqli->execute('SET NAMES 'utf8...', false)
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/sql.inc.php(66): ADODB_mysqli_log->ExecuteNoLog('SET NAMES 'utf8...')
+#5 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php(301): require_once('/home/customer/...')
+#6 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/patient_tracker/patient_tracker.php(21): require_once('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php on line 1372

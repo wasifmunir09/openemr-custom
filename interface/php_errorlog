@@ -1,0 +1,79 @@
+[25-Sep-2025 15:26:41 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php:1372
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1372): mysqli_query(false, 'SET NAMES 'utf8...', 0)
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/adodb.inc.php(1613): ADODB_mysqli->_query('SET NAMES 'utf8...', false)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1113): ADOConnection->_Execute('SET NAMES 'utf8...')
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/ADODB_mysqli_log.php(60): ADODB_mysqli->execute('SET NAMES 'utf8...', false)
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/sql.inc.php(66): ADODB_mysqli_log->ExecuteNoLog('SET NAMES 'utf8...')
+#5 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php(301): require_once('/home/customer/...')
+#6 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/logout.php(23): require_once('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php on line 1372
+[25-Sep-2025 15:27:02 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php:1372
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1372): mysqli_query(false, 'SET NAMES 'utf8...', 0)
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/adodb.inc.php(1613): ADODB_mysqli->_query('SET NAMES 'utf8...', false)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1113): ADOConnection->_Execute('SET NAMES 'utf8...')
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/ADODB_mysqli_log.php(60): ADODB_mysqli->execute('SET NAMES 'utf8...', false)
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/sql.inc.php(66): ADODB_mysqli_log->ExecuteNoLog('SET NAMES 'utf8...')
+#5 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php(301): require_once('/home/customer/...')
+#6 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/logout.php(23): require_once('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php on line 1372
+[25-Sep-2025 15:27:07 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php:1372
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1372): mysqli_query(false, 'SET NAMES 'utf8...', 0)
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/adodb.inc.php(1613): ADODB_mysqli->_query('SET NAMES 'utf8...', false)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1113): ADOConnection->_Execute('SET NAMES 'utf8...')
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/ADODB_mysqli_log.php(60): ADODB_mysqli->execute('SET NAMES 'utf8...', false)
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/sql.inc.php(66): ADODB_mysqli_log->ExecuteNoLog('SET NAMES 'utf8...')
+#5 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php(301): require_once('/home/customer/...')
+#6 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/logout.php(23): require_once('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php on line 1372
+[25-Sep-2025 15:27:08 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php:1372
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1372): mysqli_query(false, 'SET NAMES 'utf8...', 0)
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/adodb.inc.php(1613): ADODB_mysqli->_query('SET NAMES 'utf8...', false)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1113): ADOConnection->_Execute('SET NAMES 'utf8...')
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/ADODB_mysqli_log.php(60): ADODB_mysqli->execute('SET NAMES 'utf8...', false)
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/sql.inc.php(66): ADODB_mysqli_log->ExecuteNoLog('SET NAMES 'utf8...')
+#5 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php(301): require_once('/home/customer/...')
+#6 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/logout.php(23): require_once('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php on line 1372
+[25-Sep-2025 15:27:10 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php:1372
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1372): mysqli_query(false, 'SET NAMES 'utf8...', 0)
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/adodb.inc.php(1613): ADODB_mysqli->_query('SET NAMES 'utf8...', false)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php(1113): ADOConnection->_Execute('SET NAMES 'utf8...')
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/ADODB_mysqli_log.php(60): ADODB_mysqli->execute('SET NAMES 'utf8...', false)
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/sql.inc.php(66): ADODB_mysqli_log->ExecuteNoLog('SET NAMES 'utf8...')
+#5 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php(301): require_once('/home/customer/...')
+#6 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/logout.php(23): require_once('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/vendor/adodb/adodb-php/drivers/adodb-mysqli.inc.php on line 1372
+[10-Oct-2025 08:01:18 UTC] Custom module bootstrap file /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is not readable. Retry Count:1
+[10-Oct-2025 08:01:23 UTC] Custom module bootstrap file /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is not readable. Retry Count:2
+[10-Oct-2025 08:01:28 UTC] Custom module bootstrap file /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is not readable. Retry Count:3
+[10-Oct-2025 08:01:33 UTC] Custom module /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is enabled but after 3 tries can not read the bootstrap.php script. Uninstall and or disable in module manager.
+[10-Oct-2025 08:02:12 UTC] Custom module bootstrap file /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is not readable. Retry Count:1
+[10-Oct-2025 08:02:17 UTC] Custom module bootstrap file /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is not readable. Retry Count:2
+[10-Oct-2025 08:02:22 UTC] Custom module bootstrap file /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is not readable. Retry Count:3
+[10-Oct-2025 08:02:27 UTC] Custom module /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is enabled but after 3 tries can not read the bootstrap.php script. Uninstall and or disable in module manager.
+[10-Oct-2025 08:07:23 UTC] Custom module bootstrap file /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is not readable. Retry Count:1
+[10-Oct-2025 08:07:28 UTC] Custom module bootstrap file /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is not readable. Retry Count:2
+[10-Oct-2025 08:07:33 UTC] Custom module bootstrap file /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is not readable. Retry Count:3
+[10-Oct-2025 08:07:38 UTC] Custom module /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is enabled but after 3 tries can not read the bootstrap.php script. Uninstall and or disable in module manager.
+[10-Oct-2025 08:07:54 UTC] Custom module bootstrap file /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is not readable. Retry Count:1
+[10-Oct-2025 08:07:59 UTC] Custom module bootstrap file /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is not readable. Retry Count:2
+[10-Oct-2025 08:08:04 UTC] Custom module bootstrap file /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is not readable. Retry Count:3
+[10-Oct-2025 08:08:09 UTC] Custom module /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is enabled but after 3 tries can not read the bootstrap.php script. Uninstall and or disable in module manager.
+[10-Oct-2025 08:19:34 UTC] Custom module bootstrap file /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is not readable. Retry Count:1
+[10-Oct-2025 08:19:39 UTC] Custom module bootstrap file /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is not readable. Retry Count:2
+[10-Oct-2025 08:19:44 UTC] Custom module bootstrap file /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is not readable. Retry Count:3
+[10-Oct-2025 08:19:49 UTC] Custom module /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is enabled but after 3 tries can not read the bootstrap.php script. Uninstall and or disable in module manager.
+[10-Oct-2025 11:07:24 UTC] Custom module bootstrap file /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is not readable. Retry Count:1
+[10-Oct-2025 11:07:29 UTC] Custom module bootstrap file /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is not readable. Retry Count:2
+[10-Oct-2025 11:07:34 UTC] Custom module bootstrap file /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is not readable. Retry Count:3
+[10-Oct-2025 11:07:39 UTC] Custom module /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is enabled but after 3 tries can not read the bootstrap.php script. Uninstall and or disable in module manager.
