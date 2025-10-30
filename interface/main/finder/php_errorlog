@@ -2,3 +2,7 @@
 [10-Oct-2025 08:07:27 UTC] Custom module bootstrap file /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is not readable. Retry Count:2
 [10-Oct-2025 08:07:32 UTC] Custom module bootstrap file /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is not readable. Retry Count:3
 [10-Oct-2025 08:07:37 UTC] Custom module /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/modules/custom_modules/custom_landing/openemr.bootstrap.php is enabled but after 3 tries can not read the bootstrap.php script. Uninstall and or disable in module manager.
+[28-Oct-2025 11:17:56 UTC] OpenEMR CSRF token authentication error
+[28-Oct-2025 11:17:58 UTC] OpenEMR CSRF token authentication error
+[28-Oct-2025 11:18:07 UTC] OpenEMR CSRF token authentication error
+[28-Oct-2025 11:18:26 UTC] OpenEMR CSRF token authentication error

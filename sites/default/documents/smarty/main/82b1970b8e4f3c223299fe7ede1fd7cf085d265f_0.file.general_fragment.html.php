@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.5, created on 2025-10-27 16:14:12
+/* Smarty version 4.5.5, created on 2025-10-29 15:35:26
   from '/home/customer/www/ryanj95.sg-host.com/public_html/openemr/templates/prescription/general_fragment.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.5',
-  'unifunc' => 'content_68ff9a54e811f3_31789010',
+  'unifunc' => 'content_6902343e8b8f17_58049099',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '82b1970b8e4f3c223299fe7ede1fd7cf085d265f' => 
     array (
       0 => '/home/customer/www/ryanj95.sg-host.com/public_html/openemr/templates/prescription/general_fragment.html',
-      1 => 1742416871,
+      1 => 1761633664,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_68ff9a54e811f3_31789010 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6902343e8b8f17_58049099 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/smarty/plugins/function.xlt.php','function'=>'smarty_function_xlt',),));
 if (empty($_smarty_tpl->tpl_vars['prescriptions']->value)) {
 echo smarty_function_xlt(array('t'=>'None'),$_smarty_tpl);?>

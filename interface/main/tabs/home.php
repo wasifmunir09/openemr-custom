@@ -1,0 +1,314 @@
+<?php echo $GLOBALS['webroot']; ?>
+<?php
+/**
+ * Custom Landing Page with Practice Branding
+ * Powered by SpectrumEMR
+ */
+
+// Use absolute path instead of relative
+require_once("/home/u3000-yqmyhvguypfd/www/ryanj95.sg-host.com/public_html/openemr/interface/globals.php");
+
+use OpenEMR\Common\Acl\AclMain;
+use OpenEMR\Common\Csrf\CsrfUtils;
+use OpenEMR\Core\Header;
+
+// Check if user is logged in
+if (!isset($_SESSION['authUserID'])) {
+    header("Location: " . $GLOBALS['webroot'] . "/interface/login/login.php");
+    exit;
+}
+
+$user = $_SESSION['authUser'];
+//$token_main = $_SESSION['token_main_php'] ?? '';
+$token_main = $_SESSION['token_main'] ?? $_SESSION['token_main_php'] ?? '';
+$practice_name = $GLOBALS['openemr_name'] ?? 'OpenEMR Practice';
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <?php if (!empty($GLOBALS['css_theme'])): ?>
+    <link rel="stylesheet" href="<?php echo $GLOBALS['css_theme']; ?>">
+    <?php endif; ?>
+    <title>Dashboard - <?php echo text($practice_name); ?></title>
+    <?php Header::setupHeader(); ?>
+    <style>
+        <?php
+            $theme_css = $GLOBALS['css_theme'] ?? '';
+        ?>
+        body {
+            background: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .landing-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 50px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .spectrum-footer {
+            text-align: right;
+            font-size: 10px;
+            color: #999;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f0f0f0;
+            font-style: italic;
+        }
+
+        .logo-container {
+            margin-bottom: 20px;
+        }
+
+        .logo-container img {
+            max-width: 130px;
+            max-height: 120px;
+        }
+
+        .welcome-text {
+            font-size: 24px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .description-text {
+            color: #666;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .icon-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+
+        .icon-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .icon-card i {
+            font-size: 48px;
+            margin-bottom: 15px;
+            display: block;
+            color: #007bff;
+        }
+
+        .icon-card .icon-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .icon-card .icon-description {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .logout {
+            position: relative;
+            display: none;
+            height: 60px;
+        }
+
+        .logout-btn {
+            position: absolute;
+            right: 0px;
+            background: #dc3545;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+            z-index: 1000;
+            font-size: 14px;
+        }
+
+        .logout-btn:hover {
+            background: #c82333;
+            text-decoration: none;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .logout {
+                position: relative;
+                display: block;
+                height: 50px;
+            }
+
+            .landing-container {
+                padding: 20px 20px;
+            }
+
+            .header-section {
+                padding: 20px;
+            }
+
+            .logo-container img {
+                max-width: 150px;
+            }
+
+            .welcome-text {
+                font-size: 20px;
+            }
+
+            .spectrum-footer {
+                text-align: center;
+                margin-bottom: 15px;
+            }
+
+            .icon-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 15px;
+            }
+
+            .icon-card {
+                padding: 20px 15px;
+            }
+
+            .icon-card i {
+                font-size: 36px;
+            }
+
+            .icon-card .icon-title {
+                font-size: 14px;
+            }
+
+            .icon-card .icon-description {
+                font-size: 11px;
+            }
+        }
+        <?php if ($theme_css): ?>
+        <link rel="stylesheet" href="<?php echo $theme_css; ?>">
+        <?php endif; ?>
+    </style>
+</head>
+<body>
+    <div class="landing-container">
+
+        <div class="logout">
+            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/logout.php" class="logout-btn">
+                <i class="fa fa-sign-out"></i> Logout
+            </a>
+        </div>
+
+        <div class="header-section">
+            <!-- SpectrumEMR Branding (Subtle) -->
+            <div class="spectrum-footer">
+                Powered by <strong>SpectrumEMR</strong>
+            </div>
+
+            <!-- Practice Logo and Name (Prominent) -->
+            <div class="logo-container">
+                <?php if (file_exists($GLOBALS['OE_SITE_DIR'] . "/images/logo_1.png")): ?>
+                    <img src="<?php echo $GLOBALS['webroot']; ?>/sites/default/images/logo_1.png" alt="Practice Logo">
+                <?php else: ?>
+                    <h1 style="color: #007bff;"><?php echo text($practice_name); ?></h1>
+                <?php endif; ?>
+            </div>
+
+            <!-- Welcome Message -->
+            <h1 class="welcome-text">Welcome, <?php echo text($user); ?>!</h1>
+            <p class="description-text">Select an option below to get started</p>
+        </div>
+
+        <!-- Navigation Grid -->
+        <div class="icon-grid">
+            <!-- Calendar  
+
+		<a href="#" onclick="
+		    top.restoreSession();
+		    const url = top.webroot_url + '/interface/main/calendar/index.php';
+		    top.navigateTab(url, 'calendar', function() {
+		        top.activateTabByName('calendar', true);
+		    });
+		    return false;
+		" class="icon-card">
+		    <i class="fa fa-calendar"></i>
+		    <div class="icon-title">Calendar</div>
+		    <div class="icon-description">View appointments and schedule</div>
+		</a> -->
+
+
+		
+
+
+
+            <!-- Patients  -->
+
+		<a href="#" onclick="top.restoreSession(); top.navigateTab('../finder/dynamic_finder.php','pat',function(){ top.activateTabByName('pat',true); }); return false;" class="icon-card">
+
+		    <i class="fa fa-users"></i>
+		    <div class="icon-title">Patients</div>
+		    <div class="icon-description">Search and manage patients</div>
+		</a> 
+
+            <!-- New Patient -->
+            <a href="#" onclick="top.restoreSession(); top.navigateTab('../../new/new.php','newpat',function(){ top.activateTabByName('newpat',true); }); return false;" class="icon-card">
+                <i class="fa fa-user-plus"></i>
+                <div class="icon-title">New Patient</div>
+                <div class="icon-description">Register new patient</div>
+            </a>
+
+            <!-- Billing -->
+            <a href="#" onclick="top.restoreSession(); top.navigateTab('../../billing/billing_report.php','billing',function(){ top.activateTabByName('billing',true); }); return false;" class="icon-card">
+                <i class="fa fa-dollar"></i>
+                <div class="icon-title">Billing</div>
+                <div class="icon-description">Manage billing and payments</div>
+            </a>
+
+            <!-- Messages -->
+            <a href="#" onclick="top.restoreSession(); top.navigateTab('../messages/messages.php','msg',function(){ top.activateTabByName('msg',true); }); return false;" class="icon-card">
+                <i class="fa fa-envelope"></i>
+                <div class="icon-title">Messages</div>
+                <div class="icon-description">Internal messaging system</div>
+            </a>
+
+            <!-- Flow -->
+            <a href="#" onclick="top.restoreSession(); top.navigateTab('../../reports/patient_flow_board_report.php','flow',function(){ top.activateTabByName('flow',true); }); return false;" class="icon-card">
+                <i class="fa fa-sitemap"></i>
+                <div class="icon-title">Flow</div>
+                <div class="icon-description">Patient flow board</div>
+            </a>
+
+            <!-- Administration -->
+            <?php if (AclMain::aclCheckCore('admin', 'super')) { ?>
+		<a href="#" onclick="top.restoreSession(); top.navigateTab('../../super/edit_globals.php','admin',function(){ top.activateTabByName('admin',true); }); return false;" class="icon-card">
+		    <i class="fa fa-cog"></i>
+		    <div class="icon-title">Administration</div>
+		    <div class="icon-description">System settings and configuration</div>
+		</a>
+		<?php } ?>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+[29-Oct-2025 15:26:09 UTC] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/FeeSheet.class.php on line 129
+[29-Oct-2025 15:26:09 UTC] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/FeeSheet.class.php on line 170
+[29-Oct-2025 15:26:09 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string - string in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/FeeSheet.class.php:172
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/FeeSheet.class.php(143): FeeSheet::getAge(NULL, '2025-10-29')
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/FeeSheetHtml.class.php(26): FeeSheet->__construct(0, 0)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/forms/LBF/new.php(200): FeeSheetHtml->__construct(0, 0)
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/forms/LBF/view.php(13): require('/home/customer/...')
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/patient_file/encounter/view_form.php(50): require_once('/home/customer/...')
+#5 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/FeeSheet.class.php on line 172
+[29-Oct-2025 15:34:32 UTC] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/FeeSheet.class.php on line 129
+[29-Oct-2025 15:34:32 UTC] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/FeeSheet.class.php on line 170
+[29-Oct-2025 15:34:32 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string - string in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/FeeSheet.class.php:172
+Stack trace:
+#0 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/FeeSheet.class.php(143): FeeSheet::getAge(NULL, '2025-10-29')
+#1 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/FeeSheetHtml.class.php(26): FeeSheet->__construct(0, 0)
+#2 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/forms/LBF/new.php(200): FeeSheetHtml->__construct(0, 0)
+#3 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/forms/LBF/view.php(13): require('/home/customer/...')
+#4 /home/customer/www/ryanj95.sg-host.com/public_html/openemr/interface/patient_file/encounter/view_form.php(50): require_once('/home/customer/...')
+#5 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/FeeSheet.class.php on line 172

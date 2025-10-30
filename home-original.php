@@ -1,6 +1,7 @@
 <?php
 /**
- * Custom Icon-Based Landing Page
+ * Custom Landing Page with Practice Branding
+ * Powered by SpectrumEMR
  */
 
 // Use absolute path instead of relative
@@ -18,11 +19,12 @@ if (!isset($_SESSION['authUserID'])) {
 
 $user = $_SESSION['authUser'];
 $token_main = $_SESSION['token_main_php'] ?? '';
+$practice_name = $GLOBALS['openemr_name'] ?? 'OpenEMR Practice';
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Dashboard - <?php echo text($GLOBALS['openemr_name']); ?></title>
+    <title>Dashboard - <?php echo text($practice_name); ?></title>
     <?php Header::setupHeader(); ?>
     <style>
         body {
@@ -47,19 +49,35 @@ $token_main = $_SESSION['token_main_php'] ?? '';
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
+        .spectrum-footer {
+            text-align: right;
+            font-size: 10px;
+            color: #999;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f0f0f0;
+            font-style: italic;
+        }
+
         .logo-container {
             margin-bottom: 20px;
         }
 
         .logo-container img {
-            max-width: 250px;
-            height: auto;
+            max-width: 130px;
+            max-height: 120px;
         }
 
         .welcome-text {
             font-size: 24px;
             color: #333;
             margin: 10px 0;
+        }
+
+        .description-text {
+            color: #666;
+            font-size: 14px;
+            margin-top: 15px;
         }
 
         .icon-grid {
@@ -106,7 +124,12 @@ $token_main = $_SESSION['token_main_php'] ?? '';
             color: #666;
         }
 
-        .logout{ position: relative; display:block; height:60px }
+        .logout {
+            position: relative;
+            display: block;
+            height: 60px;
+        }
+
         .logout-btn {
             position: absolute;
             right: 0px;
@@ -120,53 +143,114 @@ $token_main = $_SESSION['token_main_php'] ?? '';
             z-index: 1000;
             font-size: 14px;
         }
-        
-        @media (max-width: 768px) {
-            .logout{ position: relative; display:block; height:50px }
-            .landing-container { padding: 20px 20px; }
-        }
 
         .logout-btn:hover {
             background: #c82333;
             text-decoration: none;
             color: white;
         }
+
+        @media (max-width: 768px) {
+            .logout {
+                position: relative;
+                display: block;
+                height: 50px;
+            }
+
+            .landing-container {
+                padding: 20px 20px;
+            }
+
+            .header-section {
+                padding: 20px;
+            }
+
+            .logo-container img {
+                max-width: 150px;
+            }
+
+            .welcome-text {
+                font-size: 20px;
+            }
+
+            .spectrum-footer {
+                text-align: center;
+                margin-bottom: 15px;
+            }
+
+            .icon-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 15px;
+            }
+
+            .icon-card {
+                padding: 20px 15px;
+            }
+
+            .icon-card i {
+                font-size: 36px;
+            }
+
+            .icon-card .icon-title {
+                font-size: 14px;
+            }
+
+            .icon-card .icon-description {
+                font-size: 11px;
+            }
+        }
     </style>
 </head>
 <body>
-    
-
     <div class="landing-container">
 
-	<div class="logout">
-            <a href="/openemr/interface/logout.php" class="logout-btn">
-            <i class="fa fa-sign-out"></i> Logout
+        <div class="logout">
+            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/logout.php" class="logout-btn">
+                <i class="fa fa-sign-out"></i> Logout
             </a>
         </div>
-	
+
         <div class="header-section">
+            <!-- SpectrumEMR Branding (Subtle) -->
+            <div class="spectrum-footer">
+                Powered by <strong>SpectrumEMR</strong>
+            </div>
+
+            <!-- Practice Logo and Name (Prominent) -->
             <div class="logo-container">
-                <?php if (file_exists($GLOBALS['OE_SITE_DIR'] . "/images/logo.png")): ?>
-                    <img src="<?php echo $GLOBALS['webroot']; ?>/sites/default/images/logo.png" alt="Logo">
+                <?php if (file_exists($GLOBALS['OE_SITE_DIR'] . "/images/logo_1.png")): ?>
+                    <img src="<?php echo $GLOBALS['webroot']; ?>/sites/default/images/logo_1.png" alt="Practice Logo">
                 <?php else: ?>
-                    <h1 style="color: #007bff;"><?php echo text($GLOBALS['openemr_name']); ?></h1>
+                    <h1 style="color: #007bff;"><?php echo text($practice_name); ?></h1>
                 <?php endif; ?>
             </div>
+
+            <!-- Welcome Message -->
             <h1 class="welcome-text">Welcome, <?php echo text($user); ?>!</h1>
-            <p style="color: #666;">Select an option below to get started</p>
+            <p class="description-text">Select an option below to get started</p>
         </div>
 
+        <!-- Navigation Grid -->
         <div class="icon-grid">
-            <!-- Calendar -->
+            <!-- Calendar
             <a href="<?php echo $GLOBALS['webroot']; ?>/interface/main/tabs/main.php?token_main=<?php echo urlencode($token_main); ?>"
                class="icon-card">
                 <i class="fa fa-calendar"></i>
                 <div class="icon-title">Calendar</div>
                 <div class="icon-description">View appointments and schedule</div>
             </a>
+		-->
+
+<a href="<?php echo $GLOBALS['webroot']; ?>/interface/main/main_screen.php?mode=calendar&token_main=<?php echo urlencode($token_main); ?>"
+   class="icon-card">
+    <i class="fa fa-calendar"></i>
+    <div class="icon-title">Calendar</div>
+    <div class="icon-description">View appointments and schedule</div>
+</a>
+
 
             <!-- Patients -->
-            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/main/finder/dynamic_finder.php"
+            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/main/finder/dynamic_finder.php?token_main=<?php echo urlencode($token_main); ?>"
                class="icon-card">
                 <i class="fa fa-users"></i>
                 <div class="icon-title">Patients</div>
@@ -174,7 +258,7 @@ $token_main = $_SESSION['token_main_php'] ?? '';
             </a>
 
             <!-- New Patient -->
-            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/new/new.php"
+            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/new/new.php?token_main=<?php echo urlencode($token_main); ?>"
                class="icon-card">
                 <i class="fa fa-user-plus"></i>
                 <div class="icon-title">New Patient</div>
@@ -182,7 +266,7 @@ $token_main = $_SESSION['token_main_php'] ?? '';
             </a>
 
             <!-- Billing -->
-            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/billing/billing_report.php"
+            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/billing/billing_report.php?token_main=<?php echo urlencode($token_main); ?>"
                class="icon-card">
                 <i class="fa fa-dollar"></i>
                 <div class="icon-title">Billing</div>
@@ -190,24 +274,24 @@ $token_main = $_SESSION['token_main_php'] ?? '';
             </a>
 
             <!-- Messages -->
-            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/main/messages/messages.php"
+            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/main/messages/messages.php?token_main=<?php echo urlencode($token_main); ?>"
                class="icon-card">
                 <i class="fa fa-envelope"></i>
                 <div class="icon-title">Messages</div>
                 <div class="icon-description">Internal messaging system</div>
             </a>
 
-<!-- Flow -->
-<a href="<?php echo $GLOBALS['webroot']; ?>/interface/reports/patient_flow_board_report.php"
-   class="icon-card">
-    <i class="fa fa-sitemap"></i>
-    <div class="icon-title">Flow</div>
-    <div class="icon-description">Patient flow board</div>
-</a>
+            <!-- Flow -->
+            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/reports/patient_flow_board_report.php?token_main=<?php echo urlencode($token_main); ?>"
+               class="icon-card">
+                <i class="fa fa-sitemap"></i>
+                <div class="icon-title">Flow</div>
+                <div class="icon-description">Patient flow board</div>
+            </a>
 
             <!-- Administration -->
             <?php if (AclMain::aclCheckCore('admin', 'super')) { ?>
-            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/super/edit_globals.php"
+            <a href="<?php echo $GLOBALS['webroot']; ?>/interface/super/edit_globals.php?token_main=<?php echo urlencode($token_main); ?>"
                class="icon-card">
                 <i class="fa fa-cog"></i>
                 <div class="icon-title">Administration</div>

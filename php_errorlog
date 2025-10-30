@@ -26,3 +26,36 @@ Stack trace:
 [25-Sep-2025 07:56:43 UTC] PHP Deprecated:  Creation of dynamic property Installer::$theme_file_name is deprecated in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/classes/Installer.class.php on line 1577
 [25-Sep-2025 07:56:49 UTC] PHP Deprecated:  Creation of dynamic property Installer::$theme_file_name is deprecated in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/classes/Installer.class.php on line 1577
 [25-Sep-2025 10:31:13 UTC] OpenEMR has already been installed. If you wish to force re-installation, then edit /home/customer/www/ryanj95.sg-host.com/public_html/openemr/library/classes/../../sites/default/sqlconf.php (change the 'config' variable to 0), and re-run the setup.php script.
+[29-Oct-2025 14:08:07 UTC] PHP Parse error:  syntax error, unexpected token "use" in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/home.php on line 18
+[29-Oct-2025 14:10:40 UTC] PHP Fatal error:  Uncaught Error: Class "OpenEMR\Common\Uuid\RandomGenUtils" not found in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/home.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/home.php on line 21
+[29-Oct-2025 14:13:05 UTC] PHP Fatal error:  Uncaught Error: Class "OpenEMR\Common\Uuid\RandomGenUtils" not found in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/home.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/home.php on line 21
+[29-Oct-2025 14:13:20 UTC] PHP Fatal error:  Uncaught Error: Class "OpenEMR\Common\Uuid\RandomGenUtils" not found in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/home.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/home.php on line 21
+[29-Oct-2025 14:15:18 UTC] PHP Fatal error:  Uncaught Error: Class "RandomGenUtils" not found in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/home.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/home.php on line 17
+[29-Oct-2025 14:15:28 UTC] PHP Fatal error:  Uncaught Error: Class "RandomGenUtils" not found in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/home.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/home.php on line 17
+[29-Oct-2025 14:16:30 UTC] PHP Fatal error:  Uncaught Error: Class "OpenEMR\Common\Uuid\RandomGenUtils" not found in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/home.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/home.php on line 18
+[29-Oct-2025 14:16:45 UTC] PHP Fatal error:  Uncaught Error: Class "OpenEMR\Common\Uuid\RandomGenUtils" not found in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/home.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/home.php on line 18
+[29-Oct-2025 14:26:34 UTC] PHP Fatal error:  Uncaught Error: Class "Header" not found in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/home.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/ryanj95.sg-host.com/public_html/openemr/home.php on line 22

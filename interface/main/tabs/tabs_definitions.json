@@ -1,0 +1,7 @@
+"home": {
+  "label": "Dashboard",
+  "url": "interface/main/tabs/home.php",
+  "category": "general",
+  "require": ["auth"]
+},
+

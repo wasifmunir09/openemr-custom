@@ -357,24 +357,46 @@ $twig = (new TwigContainer(null, $GLOBALS['kernel']))->getTwig();
 
     <script>
         <?php
-        if ($_SESSION['default_open_tabs']) :
-            // For now, only the first tab is visible, this could be improved upon by further customizing the list options in a future feature request
-            $visible = "true";
-            foreach ($_SESSION['default_open_tabs'] as $i => $tab) :
-                $_unsafe_url = preg_replace('/(\?.*)/m', '', Path::canonicalize($fileroot . DIRECTORY_SEPARATOR . $tab['notes']));
-                if (realpath($_unsafe_url) === false || strpos($_unsafe_url, $fileroot) !== 0) {
-                    unset($_SESSION['default_open_tabs'][$i]);
-                    continue;
-                }
-                $url = json_encode($webroot . "/" . $tab['notes']);
-                $target = json_encode($tab['option_id']);
-                $label = json_encode(xl("Loading") . " " . $tab['title']);
-                $loading = xlj("Loading");
-                echo "app_view_model.application_data.tabs.tabsList.push(new tabStatus($label, $url, $target, $loading, true, $visible, false));\n";
-                $visible = "false";
-            endforeach;
-        endif;
-        ?>
+// --- Always open Dashboard tab first ---
+// If there are no tabs or the array is invalid, initialize it
+if (empty($_SESSION['default_open_tabs']) || !is_array($_SESSION['default_open_tabs'])) {
+    $_SESSION['default_open_tabs'] = [];
+}
+
+// Remove any default Calendar entry
+foreach ($_SESSION['default_open_tabs'] as $i => $tab) {
+    if (isset($tab['option_id']) && $tab['option_id'] === 'calendar') {
+        unset($_SESSION['default_open_tabs'][$i]);
+    }
+}
+
+// Prepend Dashboard to the start of the tab list
+array_unshift($_SESSION['default_open_tabs'], [
+    'title' => 'Dashboard',
+    'notes' => 'interface/main/tabs/home.php',
+    'option_id' => 'home'
+]);
+
+// Continue with the normal tab rendering loop
+if ($_SESSION['default_open_tabs']) :
+    $visible = "true";
+    foreach ($_SESSION['default_open_tabs'] as $i => $tab) :
+        $_unsafe_url = preg_replace('/(\?.*)/m', '', Path::canonicalize($fileroot . DIRECTORY_SEPARATOR . $tab['notes']));
+        if (realpath($_unsafe_url) === false || strpos($_unsafe_url, $fileroot) !== 0) {
+            unset($_SESSION['default_open_tabs'][$i]);
+            continue;
+        }
+        $url = json_encode($webroot . "/" . $tab['notes']);
+        $target = json_encode($tab['option_id']);
+        $label = json_encode(xl("Loading") . " " . $tab['title']);
+        $loading = xlj("Loading");
+        echo "app_view_model.application_data.tabs.tabsList.push(new tabStatus($label, $url, $target, $loading, true, $visible, false));\n";
+        $visible = "false";
+    endforeach;
+endif;
+?>
+			
+
 
         app_view_model.application_data.user(new user_data_view_model(<?php echo json_encode($_SESSION["authUser"])
                                                                             . ',' . json_encode($userQuery['fname'])
